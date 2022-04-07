@@ -6,6 +6,12 @@
 
 thebigmunch's README.md, CHANGELOG.md, CONTRIBUTING.md & SUPPORT.md is moved to folder **thebigmunch/**
 
+## Update
+
+### **The update/version buttons in rutorrent - do not work for mkgeeky's version!**
+
+If you want to update the tracker list, you can use our [autodl-tracker-updater](https://github.com/mkgeeky/autodl-trackers-updater)
+
 ## Need a tracker / need a change to tracker?
 
 #### New Tracker
@@ -21,9 +27,3 @@ Create a issue with following information:
 Create a issue with following information:
 * What is changed? **From what to what**
 * At least 5 lines from the announce channel
-
-## Update
-
-### **The update/version buttons in rutorrent - do not work for mkgeeky's version!**
-
-If you want to update the tracker list, you can use our [autodl-tracker-updater](https://github.com/mkgeeky/autodl-trackers-updater)
