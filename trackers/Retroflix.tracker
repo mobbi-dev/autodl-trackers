@@ -63,7 +63,7 @@
             <var name="$baseUrl"/>
             <string value="download.php?id="/>
             <var name="$torrentId"/>
-            <string value="&passkey="/>
+            <string value="&amp;passkey="/>
             <var name="passkey"/>
           </var>
         </linematched>
