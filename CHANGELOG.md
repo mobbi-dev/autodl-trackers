@@ -1,3 +1,10 @@
+## [v290.1](https://github.com/mkgeeky/autodl-trackers/releases/tag/v290) (2022-04-18)
+
+[Commits](https://github.com/mkgeeky/autodl-trackers/compare/v289...v290.1)
+
+### Edited
+* SpeedApp [Empty Text]
+
 ## [v290](https://github.com/mkgeeky/autodl-trackers/releases/tag/v290) (2022-04-18)
 
 [Commits](https://github.com/mkgeeky/autodl-trackers/compare/v289...v290)
