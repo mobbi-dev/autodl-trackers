@@ -1,4 +1,11 @@
-## [v290.1](https://github.com/mkgeeky/autodl-trackers/releases/tag/v290) (2022-04-18)
+## [v290.2](https://github.com/mkgeeky/autodl-trackers/releases/tag/v290.2) (2022-04-18)
+
+[Commits](https://github.com/mkgeeky/autodl-trackers/compare/v290.1...v290.2)
+
+### Edited
+* Retroflix [Parse Passkey]
+
+## [v290.1](https://github.com/mkgeeky/autodl-trackers/releases/tag/v290.1) (2022-04-18)
 
 [Commits](https://github.com/mkgeeky/autodl-trackers/compare/v289...v290.1)
 
