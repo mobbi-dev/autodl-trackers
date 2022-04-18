@@ -1,3 +1,16 @@
+## [v290](https://github.com/mkgeeky/autodl-trackers/releases/tag/v290) (2022-04-18)
+
+[Commits](https://github.com/mkgeeky/autodl-trackers/compare/v289...v290)
+
+### Added
+* FUNDING
+* speedapp (https://github.com/autodl-community/autodl-trackers/pull/288/commits/3435f80fe28aa47e248e7e1de695bffbebb54459)
+* Retroflix (https://github.com/autodl-community/autodl-trackers/pull/288/commits/0ba7347c7af953b2c04e57c354d68344ac7d192e)
+* MyXZ [Part og speedapp] (https://github.com/autodl-community/autodl-trackers/pull/288/commits/0b3ed55153bcc03d7950b19d6400cceb071ad093)
+
+### Edited
+* SceneFZ [Part of speedapp] (https://github.com/autodl-community/autodl-trackers/pull/288/commits/8ae656732b6ffb154e5c0d923d82d15cc2b02cb5)
+
 ## [v289](https://github.com/mkgeeky/autodl-trackers/releases/tag/v289) (2022-04-07)
 
 [Commits](https://github.com/mkgeeky/autodl-trackers/compare/v288...v289)
