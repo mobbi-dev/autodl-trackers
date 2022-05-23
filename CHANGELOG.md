@@ -1,3 +1,13 @@
+## [v290.3](https://github.com/mkgeeky/autodl-trackers/releases/tag/v290.3) (2022-04-18)
+
+[Commits](https://github.com/mkgeeky/autodl-trackers/compare/v290.2...v290.3)
+
+### Edited
+* Update regex and vars for TorrentSeeds by @gnarr in https://github.com/mkgeeky/autodl-trackers/pull/3
+
+### New Contributors
+* @gnarr made their first contribution in https://github.com/mkgeeky/autodl-trackers/pull/3
+
 ## [v290.2](https://github.com/mkgeeky/autodl-trackers/releases/tag/v290.2) (2022-04-18)
 
 [Commits](https://github.com/mkgeeky/autodl-trackers/compare/v290.1...v290.2)
