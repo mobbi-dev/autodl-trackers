@@ -1,4 +1,4 @@
-## [v290.3](https://github.com/mkgeeky/autodl-trackers/releases/tag/v290.3) (2022-04-18)
+## [v290.3](https://github.com/mkgeeky/autodl-trackers/releases/tag/v290.3) (2022-05-23)
 
 [Commits](https://github.com/mkgeeky/autodl-trackers/compare/v290.2...v290.3)
 
