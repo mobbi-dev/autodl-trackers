@@ -38,7 +38,7 @@
 		<server
 			network="TorrentSeeds"
 			serverNames="irc.torrentseeds.org"
-			channelNames="#announce"
+			channelNames="#announce,#announce-music"
 			announcerNames="torrentseeds"
 			/>
 	</servers>
