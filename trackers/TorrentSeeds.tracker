@@ -38,20 +38,33 @@
 		<server
 			network="TorrentSeeds"
 			serverNames="irc.torrentseeds.org"
-			channelNames="#announce"
+			channelNames="#announce,#announce-music"
 			announcerNames="torrentseeds"
 			/>
 	</servers>
 
 	<parseinfo>
 		<linepatterns>
+            <!-- New: Batman.1989.REMASTERED.MULTi.1080p.BluRay.x264-Ulysse .:. Category: Movies/HD-Foreign .:. Size: 8.02 GB .:. URL: https://www.torrentseeds.org/torrents/825984 .:. Uploaded by: Anonymous. -->
 			<extract>
-				<!-- New: Batman.1989.REMASTERED.MULTi.1080p.BluRay.x264-Ulysse .:. Category: Movies/HD-Foreign .:. Size: 8.02 GB .:. URL:  https://www.torrentseeds.org/torrents/825984 .:. Uploaded by: Anonymous. -->
-				<regex value="^New: (.*) .:. Category: (.*) .:. Size: (.*) .:. URL:  (https?\:\/\/[^\/]+\/).*\/(\d+) .:. Uploaded by: (.*)."/>
+				<regex value="^New: *(.*) *\.:\. *Category: *(.*) *\.:\. *Size: *(.*) *\.:\. *URL: *(https?\:\/\/[^\/]+\/).*\/(\d+) *\.:\. *Uploaded by: *(.*)\."/>
 				<vars>
 					<var name="torrentName"/>
 					<var name="category"/>
 					<var name="$torrentSize"/>
+					<var name="$baseUrl"/>
+					<var name="$torrentId"/>
+					<var name="uploader"/>
+				</vars>
+			</extract>
+            <!-- New: Afar-Old_Youth-(CR054)-WEB-2020-BABAS .:. Category: Music/MP3 .:. Size: 83.21 MB .:. Genre: Techno .:. URL: https://www.torrentseeds.org/torrents/1877733 .:. Uploaded by: Anonymous. -->
+            <extract>
+				<regex value="^New: *(.*) *\.:\. *Category: *(.*) *\.:\. *Size: *(.*) *\.:\. *Genre: *(.*) *\.:\. *URL: *(https?\:\/\/[^\/]+\/).*\/(\d+) *\.:\. *Uploaded by: *(.*)\."/>
+				<vars>
+					<var name="torrentName"/>
+					<var name="category"/>
+					<var name="$torrentSize"/>
+					<var name="genre"/>
 					<var name="$baseUrl"/>
 					<var name="$torrentId"/>
 					<var name="uploader"/>
