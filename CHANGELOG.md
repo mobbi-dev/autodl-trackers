@@ -1,3 +1,10 @@
+## [v290.4](https://github.com/mkgeeky/autodl-trackers/releases/tag/v290.4) (2022-05-27)
+
+[Commits](https://github.com/mkgeeky/autodl-trackers/compare/v290.3...v290.4)
+
+### Edited
+* Parse music announces for TorrentSeeds (#3) by @gnarr in https://github.com/mkgeeky/autodl-trackers/pull/4
+
 ## [v290.3](https://github.com/mkgeeky/autodl-trackers/releases/tag/v290.3) (2022-05-23)
 
 [Commits](https://github.com/mkgeeky/autodl-trackers/compare/v290.2...v290.3)
