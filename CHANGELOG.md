@@ -1,3 +1,13 @@
+## [v290.5](https://github.com/mkgeeky/autodl-trackers/releases/tag/v290.4) (2022-07-24)
+
+[Commits](https://github.com/mkgeeky/autodl-trackers/compare/v290.4...v290.5)
+
+### Edited
+Update Empornium.tracker by @Empornium in https://github.com/mkgeeky/autodl-trackers/pull/6
+
+### New Contributors
+@Empornium made their first contribution in https://github.com/mkgeeky/autodl-trackers/pull/6
+
 ## [v290.4](https://github.com/mkgeeky/autodl-trackers/releases/tag/v290.4) (2022-05-27)
 
 [Commits](https://github.com/mkgeeky/autodl-trackers/compare/v290.3...v290.4)
