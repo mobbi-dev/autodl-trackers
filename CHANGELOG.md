@@ -1,3 +1,10 @@
+## [v290.6](https://github.com/mkgeeky/autodl-trackers/releases/tag/v290.6) (2022-12-17)
+
+[Commits](https://github.com/mkgeeky/autodl-trackers/compare/v290.5...v290.6)
+
+### Edited
+* Update regex for UHDBits
+
 ## [v290.5](https://github.com/mkgeeky/autodl-trackers/releases/tag/v290.4) (2022-07-24)
 
 [Commits](https://github.com/mkgeeky/autodl-trackers/compare/v290.4...v290.5)
