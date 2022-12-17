@@ -40,44 +40,40 @@
 			network="P2P-Network"
 			serverNames="irc.p2p-network.net"
 			channelNames="#uhd.announce"
-			announcerNames="UHDBot"
+			announcerNames="uhdAnnounceBot"
 			/>
 	</servers>
 
 	<parseinfo>
 		<linepatterns>
 			<extract>
-					<!-- New Torrent: D'Ardennen [2015] - TayTO Type: Movie / 1080p / Encode / Freeleech: 100 Size: 7.00GB - https://uhdbits.org/torrents.php?id=13882 / https://uhdbits.org/torrents.php?action=download&id=20488-->
-					<regex value="New Torrent: (.*) Type: (.*?) Freeleech: (.*) Size: (.*) - https?://.* / (https?://.*id=\d+)"/>
+					<!-- Category [Movie] Name [A Christmas Story Christmas] Resolution [1080p] Source [WEB-DL] Freeleech [Yes] Scene [No] Release Group [dB] Container [mkv] Year [2022] Size [6.42 GB] Url [https://uhdbits.org/torrents.php?action=download&id=67392] -->
+					<regex value="Category \[(.*?)\] Name \[(.*?)\] Resolution \[(.*?)\] Source \[(.*?)\] Freeleech \[(.*?)\] Scene \[(.*?)\] Release Group \[(.*?)\] Container \[(.*?)\] Year \[(.*?)\] Size \[(.*?)\] Url \[(https?:\/\/.*id=\d+)]"/>
 				<vars>
+					<var name="category"/>
 					<var name="torrentName"/>
-					<var name="$releaseTags"/>
-					<var name="freeleechPercent"/>
+					<var name="resolution"/>
+					<var name="source"/>
+					<var name="$freeleech"/>
+					<var name="scene"/>
+					<var name="releaseGroup">
+					<var name="container"/>
+					<var name="year"/>
 					<var name="$torrentSize"/>
 					<var name="$baseUrl"/>
 				</vars>
 			</extract>
 		</linepatterns>
 		<linematched>
+			<var name="freeleech">
+				<string value="false"/>
+			</var>
+			<setregex srcvar="$freeleech" regex="Yes" varName="freeleech" newValue="true"/>
 
-			<extract srcvar="torrentName" optional="true">
-				<regex value="(.*) \[(\d+)\] - (.*)"/>
-				<vars>
-					<var name="name1"/>
-					<var name="year"/>
-					<var name="releaseGroup"/>
-				</vars>
-			</extract>
-			<varreplace name="tags" srcvar="$releaseTags" regex="[\/]" replace=","/>
-
-			<extracttags srcvar="$releaseTags" split="/">
-				<setvarif varName="category" regex="^(?:Movie|TV|Music)$"/>
-				<setvarif varName="resolution" regex="^(?:mHD|720p|1080p|1080i|2160p|4K)$"/>
-				<setvarif varName="source" regex="^(?:HDTV|BluRay|Blu\-Ray|WEB\-DL|WEBRip|HDRip|HDAudio|HD\ DVD)$"/>
-
-				<!--Ignored-->
-				<regex value=""/>
-			</extracttags>
+			<var name="scene">
+				<string value="false"/>
+			</var>
+			<setregex srcvar="$scene" regex="Yes" varName="scene" newValue="true"/>
 
 			<var name="torrentUrl">
 				<var name="$baseUrl"/>
