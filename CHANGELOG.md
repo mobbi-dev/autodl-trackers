@@ -1,3 +1,10 @@
+## [v290.6-1](https://github.com/mkgeeky/autodl-trackers/releases/tag/v290.6-1) (2022-12-22)
+
+[Commits](https://github.com/mkgeeky/autodl-trackers/compare/v290.6...v290.6-1)
+
+### Edited
+* Update UHDBits typo
+
 ## [v290.6](https://github.com/mkgeeky/autodl-trackers/releases/tag/v290.6) (2022-12-17)
 
 [Commits](https://github.com/mkgeeky/autodl-trackers/compare/v290.5...v290.6)
