@@ -47,18 +47,13 @@
 	<parseinfo>
 		<linepatterns>
 			<extract>
-				<!--Category [Movie] Name [A Christmas Story Christmas] Resolution [1080p] Source [WEB-DL] Freeleech [Yes] Scene [No] Release Group [dB] Container [mkv] Year [2022] Size [6.42 GB] Url [https://uhdbits.org/torrents.php?action=download&id=67392]-->
-				<regex value="Category \[(.*?)\] Name \[(.*?)\] Resolution \[(.*?)\] Source \[(.*?)\] Freeleech \[(.*?)\] Scene \[(.*?)\] Release Group \[(.*?)\] Container \[(.*?)\] Year \[(.*?)\] Size \[(.*?)\] Url \[(https?:\/\/.*id=\d+)]"/>
+				<!--Category [Movie] Blind [2014] Blind 2014 720p BluRay DD5.1 x264-VietHD.mkv [720p, Encode, Freeleech, mkv] Size [6.68 GB] Url [https://uhdbits.org/torrents.php?action=download&id=67576]-->
+				<regex value="Category \[(.+)\] .+ \[(\d+)\] (.+) \[(.+)\] Size \[(.+)\] Url \[(https?:\/\/.*id=\d+)\]"/>
 				<vars>
 					<var name="category"/>
-					<var name="torrentName"/>
-					<var name="resolution"/>
-					<var name="source"/>
-					<var name="$freeleech"/>
-					<var name="$scene"/>
-					<var name="releaseGroup"/>
-					<var name="container"/>
 					<var name="year"/>
+					<var name="torrentName"/>
+					<var name="releaseTags"/>
 					<var name="$torrentSize"/>
 					<var name="$baseUrl"/>
 				</vars>
@@ -70,10 +65,14 @@
 			</var>
 			<setregex srcvar="$freeleech" regex="Yes" varName="freeleech" newValue="true"/>
 
-			<var name="scene">
-				<string value="false"/>
-			</var>
-			<setregex srcvar="$scene" regex="Yes" varName="scene" newValue="true"/>
+			<extracttags srcvar="$releaseTags" split=",">
+				<setvarif varName="category" regex="^(?:Movie|TV|Music)$"/>
+				<setvarif varName="resolution" regex="^(?:mHD|720p|1080p|1080i|2160p|4K)$"/>
+				<setvarif varName="source" regex="^(?:HDTV|BluRay|Blu\-Ray|WEB\-DL|WEBRip|HDRip|HDAudio|HD\ DVD)$"/>
+
+				<!--Ignored-->
+				<regex value=""/>
+			</extracttags>
 
 			<var name="torrentUrl">
 				<var name="$baseUrl"/>
