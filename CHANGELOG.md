@@ -3,7 +3,7 @@
 [Commits](https://github.com/mkgeeky/autodl-trackers/compare/v290.6-1...v290.6.2)
 
 ### Edited
-* UHDBits regex
+* Update UHDBits regex
 
 ## [v290.6-1](https://github.com/mkgeeky/autodl-trackers/releases/tag/v290.6-1) (2022-12-22)
 
