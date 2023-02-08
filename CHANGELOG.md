@@ -1,3 +1,10 @@
+## [v290.6.3](https://github.com/mkgeeky/autodl-trackers/releases/tag/v290.6-3) (2023-08-08)
+
+[Commits](https://github.com/mkgeeky/autodl-trackers/compare/v290.6-2...v290.6.3)
+
+### Edited
+* Update NBL announcer name to Muffit by @kzmgd in https://github.com/mkgeeky/autodl-trackers/pull/8
+
 ## [v290.6.2](https://github.com/mkgeeky/autodl-trackers/releases/tag/v290.6-1) (2022-12-25)
 
 [Commits](https://github.com/mkgeeky/autodl-trackers/compare/v290.6-1...v290.6.2)
