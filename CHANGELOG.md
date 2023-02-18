@@ -1,3 +1,13 @@
+## [v290.6.4](https://github.com/mkgeeky/autodl-trackers/releases/tag/v290.6.4) (2023-02-18)
+
+[Commits](https://github.com/mkgeeky/autodl-trackers/compare/v290.6.3...v290.6.4)
+
+### Edited
+* Add HUNO support by @mitlearn in https://github.com/mkgeeky/autodl-trackers/pull/9
+
+### New Contributors
+* @mitlearn made their first contribution in https://github.com/mkgeeky/autodl-trackers/pull/9
+
 ## [v290.6.3](https://github.com/mkgeeky/autodl-trackers/releases/tag/v290.6-3) (2023-08-08)
 
 [Commits](https://github.com/mkgeeky/autodl-trackers/compare/v290.6-2...v290.6.3)
