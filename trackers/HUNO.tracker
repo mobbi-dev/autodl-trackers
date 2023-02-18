@@ -75,7 +75,6 @@
             <setvarif srcvar="$internal" varName="internal" regex="Yes" newValue="true"/>
                 <!--Ignored-->
                 <regex value=""/>
-            </extracttags>
           <!--https://base.url/torrent/download/<id>.<rsskey>-->
             <var name="torrentUrl">
               <string value="https://"/>
