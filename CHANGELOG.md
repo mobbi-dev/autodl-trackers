@@ -1,3 +1,10 @@
+## [v290.6.4.1](https://github.com/mkgeeky/autodl-trackers/releases/tag/v290.6.4.1) (2023-02-18)
+
+[Commits](https://github.com/mkgeeky/autodl-trackers/compare/v290.6.4...v290.6.4.1)
+
+### Edited
+* Typo in HUNO.tracker
+
 ## [v290.6.4](https://github.com/mkgeeky/autodl-trackers/releases/tag/v290.6.4) (2023-02-18)
 
 [Commits](https://github.com/mkgeeky/autodl-trackers/compare/v290.6.3...v290.6.4)
