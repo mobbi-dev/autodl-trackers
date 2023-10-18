@@ -38,16 +38,18 @@
 		<server
 			network="TorrentSeeds"
 			serverNames="irc.torrentseeds.org"
-			channelNames="#announce,#announce-music"
+			channelNames="#announce"
 			announcerNames="torrentseeds"
 			/>
 	</servers>
 
 	<parseinfo>
 		<linepatterns>
-            <!-- New: Batman.1989.REMASTERED.MULTi.1080p.BluRay.x264-Ulysse .:. Category: Movies/HD-Foreign .:. Size: 8.02 GB .:. URL: https://www.torrentseeds.org/torrents/825984 .:. Uploaded by: Anonymous. -->
 			<extract>
-				<regex value="^New: *(.*) *\.:\. *Category: *(.*) *\.:\. *Size: *(.*) *\.:\. *URL: *(https?\:\/\/[^\/]+\/).*\/(\d+) *\.:\. *Uploaded by: *(.*)\."/>
+			  <!-- New: Batman.1989.REMASTERED.MULTi.1080p.BluRay.x264-Ulysse .:. Category: Movies/HD-Foreign .:. Size: 8.02 GB .:. URL:  https://www.torrentseeds.org/details.php?id=825984 .:. Uploaded by: anonymous. -->
+			  <!-- New: Krieg.der.Welten.The.Attack.German.2023.AC3.BDRiP.x264-GMA .:. Category: Movies/Foreign .:. Size: 753.05 MiB .:. URL:  https://www.torrentseeds.org/torrents/2429734 .:. Uploaded by: leaker1 FREELEECH. -->
+
+				<regex value="^New: (.*) .:. Category: (.*) .:. Size: (.*) .:. URL:  (https?\:\/\/[^\/]+\/).*\/(\d+) .:. Uploaded by: ([^\. ]+) ?(FREELEECH)?"/>
 				<vars>
 					<var name="torrentName"/>
 					<var name="category"/>
@@ -55,23 +57,15 @@
 					<var name="$baseUrl"/>
 					<var name="$torrentId"/>
 					<var name="uploader"/>
-				</vars>
-			</extract>
-            <!-- New: Afar-Old_Youth-(CR054)-WEB-2020-BABAS .:. Category: Music/MP3 .:. Size: 83.21 MB .:. Genre: Techno .:. URL: https://www.torrentseeds.org/torrents/1877733 .:. Uploaded by: Anonymous. -->
-            <extract>
-				<regex value="^New: *(.*) *\.:\. *Category: *(.*) *\.:\. *Size: *(.*) *\.:\. *Genre: *(.*) *\.:\. *URL: *(https?\:\/\/[^\/]+\/).*\/(\d+) *\.:\. *Uploaded by: *(.*)\."/>
-				<vars>
-					<var name="torrentName"/>
-					<var name="category"/>
-					<var name="$torrentSize"/>
-					<var name="genre"/>
-					<var name="$baseUrl"/>
-					<var name="$torrentId"/>
-					<var name="uploader"/>
+					<var name="$freeleech"/>
 				</vars>
 			</extract>
 		</linepatterns>
 		<linematched>
+		  <var name="freeleech">
+		    <string value="false"/>
+		  </var>
+		  
 			<var name="torrentUrl">
 				<var name="$baseUrl"/>
 				<string value="torrent/download/"/>
@@ -79,6 +73,8 @@
 				<string value="."/>
 				<var name="passkey"/>
 			</var>
+
+			<setregex srcvar="$freeleech" regex="FREELEECH" varName="freeleech" newValue="true"/>
 		</linematched>
 		<ignore>
 		</ignore>
