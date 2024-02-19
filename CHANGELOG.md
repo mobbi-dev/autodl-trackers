@@ -1,3 +1,13 @@
+## [v290.6.6](https://github.com/mkgeeky/autodl-trackers/releases/tag/v290.6.6) (2024-02-19)
+
+[Commits](https://github.com/mkgeeky/autodl-trackers/compare/v290.6.5...v290.6.6)
+
+### Added
+* Added Carpathians.tracker
+
+### Edited
+* Updated PassThePopcorn - Added new channel
+
 ## [v290.6.5](https://github.com/mkgeeky/autodl-trackers/releases/tag/v290.6.4.1) (2023-02-18)
 
 [Commits](https://github.com/mkgeeky/autodl-trackers/compare/v290.6.4.1...v290.6.5)
