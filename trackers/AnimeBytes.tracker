@@ -40,7 +40,7 @@
 	<servers>
 		<server
 			network="AnimeBytes"
-			serverNames="irc.animebytes.tv"
+			serverNames="irc.animefriends.moe"
 			channelNames="#announce"
 			announcerNames="Satsuki"
 		/>
