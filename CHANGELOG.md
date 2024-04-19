@@ -1,3 +1,13 @@
+## [v290.6.7](https://github.com/mkgeeky/autodl-trackers/releases/tag/v290.6.6) (2024-04-19)
+
+[Commits](https://github.com/mkgeeky/autodl-trackers/compare/v290.6.6...v290.6.7)
+
+### Edited
+* Update IRC address for AnimeBytes by @proton-ab in #17
+
+### New Contributors
+* @proton-ab made their first contribution in #17
+
 ## [v290.6.6](https://github.com/mkgeeky/autodl-trackers/releases/tag/v290.6.6) (2024-02-19)
 
 [Commits](https://github.com/mkgeeky/autodl-trackers/compare/v290.6.5...v290.6.6)
