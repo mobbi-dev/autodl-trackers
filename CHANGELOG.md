@@ -1,4 +1,18 @@
-## [v290.6.7](https://github.com/mkgeeky/autodl-trackers/releases/tag/v290.6.6) (2024-04-19)
+## [v290.6.8](https://github.com/mkgeeky/autodl-trackers/releases/tag/v290.6.8) (2024-0X-XX)
+
+[Commits](https://github.com/mkgeeky/autodl-trackers/compare/v290.6.7...v290.6.8)
+
+### Added
+
+* HD-Only
+* SkipTheCommericals
+* Animeworld
+
+### Edited
+
+* New IPT announcer name
+
+## [v290.6.7](https://github.com/mkgeeky/autodl-trackers/releases/tag/v290.6.7) (2024-04-19)
 
 [Commits](https://github.com/mkgeeky/autodl-trackers/compare/v290.6.6...v290.6.7)
 
